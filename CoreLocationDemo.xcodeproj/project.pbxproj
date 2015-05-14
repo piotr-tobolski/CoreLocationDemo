@@ -1,0 +1,898 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1523DB01AF9064900E9967B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1523DAF1AF9064900E9967B /* MapKit.framework */; };
+		A175A6F31AF6297B004C5D02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A6F21AF6297B004C5D02 /* main.m */; };
+		A175A6F61AF6297B004C5D02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A6F51AF6297B004C5D02 /* AppDelegate.m */; };
+		A175A6F91AF6297B004C5D02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A6F81AF6297B004C5D02 /* ViewController.m */; };
+		A175A6FC1AF6297B004C5D02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A175A6FA1AF6297B004C5D02 /* Main.storyboard */; };
+		A175A6FE1AF6297C004C5D02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A175A6FD1AF6297C004C5D02 /* Images.xcassets */; };
+		A175A7011AF6297C004C5D02 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A175A6FF1AF6297C004C5D02 /* LaunchScreen.xib */; };
+		A175A70D1AF6297C004C5D02 /* CoreLocationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A70C1AF6297C004C5D02 /* CoreLocationDemoTests.m */; };
+		A175A7211AF629AF004C5D02 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7201AF629AF004C5D02 /* InterfaceController.m */; };
+		A175A7241AF629AF004C5D02 /* NotificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7231AF629AF004C5D02 /* NotificationController.m */; };
+		A175A7271AF629AF004C5D02 /* GlanceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7261AF629AF004C5D02 /* GlanceController.m */; };
+		A175A7291AF629AF004C5D02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A175A7281AF629AF004C5D02 /* Images.xcassets */; };
+		A175A72D1AF629AF004C5D02 /* CoreLocationDemo WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A175A72C1AF629AF004C5D02 /* CoreLocationDemo WatchKit App.app */; };
+		A175A7351AF629AF004C5D02 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A175A7331AF629AF004C5D02 /* Interface.storyboard */; };
+		A175A7371AF629AF004C5D02 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A175A7361AF629AF004C5D02 /* Images.xcassets */; };
+		A175A73A1AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A175A71A1AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A175A7451AF62BC2004C5D02 /* StorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7441AF62BC2004C5D02 /* StorageManager.m */; };
+		A175A7461AF62BC2004C5D02 /* StorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7441AF62BC2004C5D02 /* StorageManager.m */; };
+		A175A74D1AF62EEC004C5D02 /* NotificationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A74C1AF62EEC004C5D02 /* NotificationHelper.m */; };
+		A175A7501AF63074004C5D02 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A74F1AF63074004C5D02 /* Location.m */; };
+		A175A7511AF63074004C5D02 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A74F1AF63074004C5D02 /* Location.m */; };
+		A175A7571AF63222004C5D02 /* SignificantLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7561AF63222004C5D02 /* SignificantLocationManager.m */; };
+		A175A75B1AF638B5004C5D02 /* VisitMonitoringManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A75A1AF638B5004C5D02 /* VisitMonitoringManager.m */; };
+		A175A7601AF63C32004C5D02 /* ContinuousLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A75F1AF63C32004C5D02 /* ContinuousLocationManager.m */; };
+		A175A7631AF645D4004C5D02 /* GeocoderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7621AF645D4004C5D02 /* GeocoderManager.m */; };
+		A175A7661AF657DB004C5D02 /* AbstractLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7651AF657DB004C5D02 /* AbstractLocationManager.m */; };
+		A175A7691AF7DC4C004C5D02 /* RegionLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7681AF7DC4C004C5D02 /* RegionLocationManager.m */; };
+		A175A76C1AF7DDF6004C5D02 /* BeaconLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A76B1AF7DDF6004C5D02 /* BeaconLocationManager.m */; };
+		A175A76F1AF7E1CB004C5D02 /* BeaconManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A76E1AF7E1CB004C5D02 /* BeaconManager.m */; };
+		A175A7791AF95D2C004C5D02 /* TableController.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A7781AF95D2C004C5D02 /* TableController.m */; };
+		A175A77C1AF95ECA004C5D02 /* RowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A175A77B1AF95ECA004C5D02 /* RowController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A175A7071AF6297C004C5D02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A175A6E51AF6297B004C5D02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A175A6EC1AF6297B004C5D02;
+			remoteInfo = CoreLocationDemo;
+		};
+		A175A72E1AF629AF004C5D02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A175A6E51AF6297B004C5D02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A175A72B1AF629AF004C5D02;
+			remoteInfo = "CoreLocationDemo WatchKit App";
+		};
+		A175A7381AF629AF004C5D02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A175A6E51AF6297B004C5D02 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A175A7191AF629AF004C5D02;
+			remoteInfo = "CoreLocationDemo WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A175A7411AF629AF004C5D02 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A175A73A1AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A1523DAE1AF9014B00E9967B /* CoreLocationDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CoreLocationDemo.entitlements; sourceTree = "<group>"; };
+		A1523DAF1AF9064900E9967B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A1523DB11AF9066800E9967B /* CoreLocationDemo WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "CoreLocationDemo WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		A175A6ED1AF6297B004C5D02 /* CoreLocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A175A6F11AF6297B004C5D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A175A6F21AF6297B004C5D02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A175A6F41AF6297B004C5D02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A175A6F51AF6297B004C5D02 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A175A6F71AF6297B004C5D02 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A175A6F81AF6297B004C5D02 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A175A6FB1AF6297B004C5D02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A175A6FD1AF6297C004C5D02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A175A7001AF6297C004C5D02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A175A7061AF6297C004C5D02 /* CoreLocationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreLocationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A175A70B1AF6297C004C5D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A175A70C1AF6297C004C5D02 /* CoreLocationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreLocationDemoTests.m; sourceTree = "<group>"; };
+		A175A71A1AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CoreLocationDemo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A175A71D1AF629AF004C5D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A175A71E1AF629AF004C5D02 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		A175A71F1AF629AF004C5D02 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		A175A7201AF629AF004C5D02 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		A175A7221AF629AF004C5D02 /* NotificationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationController.h; sourceTree = "<group>"; };
+		A175A7231AF629AF004C5D02 /* NotificationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationController.m; sourceTree = "<group>"; };
+		A175A7251AF629AF004C5D02 /* GlanceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlanceController.h; sourceTree = "<group>"; };
+		A175A7261AF629AF004C5D02 /* GlanceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlanceController.m; sourceTree = "<group>"; };
+		A175A7281AF629AF004C5D02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A175A72C1AF629AF004C5D02 /* CoreLocationDemo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreLocationDemo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A175A7321AF629AF004C5D02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A175A7341AF629AF004C5D02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A175A7361AF629AF004C5D02 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A175A7431AF62BC2004C5D02 /* StorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageManager.h; sourceTree = "<group>"; };
+		A175A7441AF62BC2004C5D02 /* StorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageManager.m; sourceTree = "<group>"; };
+		A175A74B1AF62EEC004C5D02 /* NotificationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHelper.h; sourceTree = "<group>"; };
+		A175A74C1AF62EEC004C5D02 /* NotificationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHelper.m; sourceTree = "<group>"; };
+		A175A74E1AF63074004C5D02 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		A175A74F1AF63074004C5D02 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		A175A7551AF63222004C5D02 /* SignificantLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignificantLocationManager.h; sourceTree = "<group>"; };
+		A175A7561AF63222004C5D02 /* SignificantLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignificantLocationManager.m; sourceTree = "<group>"; };
+		A175A7591AF638B5004C5D02 /* VisitMonitoringManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisitMonitoringManager.h; sourceTree = "<group>"; };
+		A175A75A1AF638B5004C5D02 /* VisitMonitoringManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VisitMonitoringManager.m; sourceTree = "<group>"; };
+		A175A75E1AF63C32004C5D02 /* ContinuousLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContinuousLocationManager.h; sourceTree = "<group>"; };
+		A175A75F1AF63C32004C5D02 /* ContinuousLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContinuousLocationManager.m; sourceTree = "<group>"; };
+		A175A7611AF645D4004C5D02 /* GeocoderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeocoderManager.h; sourceTree = "<group>"; };
+		A175A7621AF645D4004C5D02 /* GeocoderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeocoderManager.m; sourceTree = "<group>"; };
+		A175A7641AF657DB004C5D02 /* AbstractLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractLocationManager.h; sourceTree = "<group>"; };
+		A175A7651AF657DB004C5D02 /* AbstractLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractLocationManager.m; sourceTree = "<group>"; };
+		A175A7671AF7DC4C004C5D02 /* RegionLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegionLocationManager.h; sourceTree = "<group>"; };
+		A175A7681AF7DC4C004C5D02 /* RegionLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegionLocationManager.m; sourceTree = "<group>"; };
+		A175A76A1AF7DDF6004C5D02 /* BeaconLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconLocationManager.h; sourceTree = "<group>"; };
+		A175A76B1AF7DDF6004C5D02 /* BeaconLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconLocationManager.m; sourceTree = "<group>"; };
+		A175A76D1AF7E1CB004C5D02 /* BeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconManager.h; sourceTree = "<group>"; };
+		A175A76E1AF7E1CB004C5D02 /* BeaconManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconManager.m; sourceTree = "<group>"; };
+		A175A7771AF95D2C004C5D02 /* TableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableController.h; sourceTree = "<group>"; };
+		A175A7781AF95D2C004C5D02 /* TableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableController.m; sourceTree = "<group>"; };
+		A175A77A1AF95ECA004C5D02 /* RowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RowController.h; sourceTree = "<group>"; };
+		A175A77B1AF95ECA004C5D02 /* RowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RowController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A175A6EA1AF6297B004C5D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1523DB01AF9064900E9967B /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A175A7031AF6297C004C5D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A175A7171AF629AF004C5D02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A175A6E41AF6297B004C5D02 = {
+			isa = PBXGroup;
+			children = (
+				A175A7421AF62B73004C5D02 /* Shared */,
+				A175A6EF1AF6297B004C5D02 /* CoreLocationDemo */,
+				A175A7091AF6297C004C5D02 /* CoreLocationDemoTests */,
+				A175A71B1AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension */,
+				A175A7301AF629AF004C5D02 /* CoreLocationDemo WatchKit App */,
+				A175A6EE1AF6297B004C5D02 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A175A6EE1AF6297B004C5D02 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A175A6ED1AF6297B004C5D02 /* CoreLocationDemo.app */,
+				A175A7061AF6297C004C5D02 /* CoreLocationDemoTests.xctest */,
+				A175A71A1AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension.appex */,
+				A175A72C1AF629AF004C5D02 /* CoreLocationDemo WatchKit App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A175A6EF1AF6297B004C5D02 /* CoreLocationDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A175A6F71AF6297B004C5D02 /* ViewController.h */,
+				A175A6F81AF6297B004C5D02 /* ViewController.m */,
+				A175A74B1AF62EEC004C5D02 /* NotificationHelper.h */,
+				A175A74C1AF62EEC004C5D02 /* NotificationHelper.m */,
+				A175A7711AF7F11A004C5D02 /* Geocoder */,
+				A175A7581AF6389C004C5D02 /* Location Managers */,
+				A175A6F01AF6297B004C5D02 /* Supporting Files */,
+			);
+			path = CoreLocationDemo;
+			sourceTree = "<group>";
+		};
+		A175A6F01AF6297B004C5D02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1523DAE1AF9014B00E9967B /* CoreLocationDemo.entitlements */,
+				A1523DAF1AF9064900E9967B /* MapKit.framework */,
+				A175A6F41AF6297B004C5D02 /* AppDelegate.h */,
+				A175A6F51AF6297B004C5D02 /* AppDelegate.m */,
+				A175A6FA1AF6297B004C5D02 /* Main.storyboard */,
+				A175A6FF1AF6297C004C5D02 /* LaunchScreen.xib */,
+				A175A6FD1AF6297C004C5D02 /* Images.xcassets */,
+				A175A6F11AF6297B004C5D02 /* Info.plist */,
+				A175A6F21AF6297B004C5D02 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A175A7091AF6297C004C5D02 /* CoreLocationDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A175A70C1AF6297C004C5D02 /* CoreLocationDemoTests.m */,
+				A175A70A1AF6297C004C5D02 /* Supporting Files */,
+			);
+			path = CoreLocationDemoTests;
+			sourceTree = "<group>";
+		};
+		A175A70A1AF6297C004C5D02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A175A70B1AF6297C004C5D02 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A175A71B1AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1523DB11AF9066800E9967B /* CoreLocationDemo WatchKit Extension.entitlements */,
+				A175A71F1AF629AF004C5D02 /* InterfaceController.h */,
+				A175A7201AF629AF004C5D02 /* InterfaceController.m */,
+				A175A7771AF95D2C004C5D02 /* TableController.h */,
+				A175A7781AF95D2C004C5D02 /* TableController.m */,
+				A175A77A1AF95ECA004C5D02 /* RowController.h */,
+				A175A77B1AF95ECA004C5D02 /* RowController.m */,
+				A175A7221AF629AF004C5D02 /* NotificationController.h */,
+				A175A7231AF629AF004C5D02 /* NotificationController.m */,
+				A175A7251AF629AF004C5D02 /* GlanceController.h */,
+				A175A7261AF629AF004C5D02 /* GlanceController.m */,
+				A175A7281AF629AF004C5D02 /* Images.xcassets */,
+				A175A71C1AF629AF004C5D02 /* Supporting Files */,
+			);
+			path = "CoreLocationDemo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A175A71C1AF629AF004C5D02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A175A71D1AF629AF004C5D02 /* Info.plist */,
+				A175A71E1AF629AF004C5D02 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A175A7301AF629AF004C5D02 /* CoreLocationDemo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A175A7331AF629AF004C5D02 /* Interface.storyboard */,
+				A175A7361AF629AF004C5D02 /* Images.xcassets */,
+				A175A7311AF629AF004C5D02 /* Supporting Files */,
+			);
+			path = "CoreLocationDemo WatchKit App";
+			sourceTree = "<group>";
+		};
+		A175A7311AF629AF004C5D02 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A175A7321AF629AF004C5D02 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A175A7421AF62B73004C5D02 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A175A74E1AF63074004C5D02 /* Location.h */,
+				A175A74F1AF63074004C5D02 /* Location.m */,
+				A175A7431AF62BC2004C5D02 /* StorageManager.h */,
+				A175A7441AF62BC2004C5D02 /* StorageManager.m */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		A175A7581AF6389C004C5D02 /* Location Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A175A7701AF7F113004C5D02 /* Abstract */,
+				A175A7721AF7F15A004C5D02 /* Continuous */,
+				A175A7731AF7F16E004C5D02 /* Significant */,
+				A175A7741AF7F176004C5D02 /* Visit */,
+				A175A7751AF7F180004C5D02 /* Region */,
+				A175A7761AF7F18C004C5D02 /* Beacon */,
+			);
+			name = "Location Managers";
+			sourceTree = "<group>";
+		};
+		A175A7701AF7F113004C5D02 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				A175A7641AF657DB004C5D02 /* AbstractLocationManager.h */,
+				A175A7651AF657DB004C5D02 /* AbstractLocationManager.m */,
+			);
+			name = Abstract;
+			sourceTree = "<group>";
+		};
+		A175A7711AF7F11A004C5D02 /* Geocoder */ = {
+			isa = PBXGroup;
+			children = (
+				A175A7611AF645D4004C5D02 /* GeocoderManager.h */,
+				A175A7621AF645D4004C5D02 /* GeocoderManager.m */,
+			);
+			name = Geocoder;
+			sourceTree = "<group>";
+		};
+		A175A7721AF7F15A004C5D02 /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				A175A75E1AF63C32004C5D02 /* ContinuousLocationManager.h */,
+				A175A75F1AF63C32004C5D02 /* ContinuousLocationManager.m */,
+			);
+			name = Continuous;
+			sourceTree = "<group>";
+		};
+		A175A7731AF7F16E004C5D02 /* Significant */ = {
+			isa = PBXGroup;
+			children = (
+				A175A7551AF63222004C5D02 /* SignificantLocationManager.h */,
+				A175A7561AF63222004C5D02 /* SignificantLocationManager.m */,
+			);
+			name = Significant;
+			sourceTree = "<group>";
+		};
+		A175A7741AF7F176004C5D02 /* Visit */ = {
+			isa = PBXGroup;
+			children = (
+				A175A7591AF638B5004C5D02 /* VisitMonitoringManager.h */,
+				A175A75A1AF638B5004C5D02 /* VisitMonitoringManager.m */,
+			);
+			name = Visit;
+			sourceTree = "<group>";
+		};
+		A175A7751AF7F180004C5D02 /* Region */ = {
+			isa = PBXGroup;
+			children = (
+				A175A7671AF7DC4C004C5D02 /* RegionLocationManager.h */,
+				A175A7681AF7DC4C004C5D02 /* RegionLocationManager.m */,
+			);
+			name = Region;
+			sourceTree = "<group>";
+		};
+		A175A7761AF7F18C004C5D02 /* Beacon */ = {
+			isa = PBXGroup;
+			children = (
+				A175A76A1AF7DDF6004C5D02 /* BeaconLocationManager.h */,
+				A175A76B1AF7DDF6004C5D02 /* BeaconLocationManager.m */,
+				A175A76D1AF7E1CB004C5D02 /* BeaconManager.h */,
+				A175A76E1AF7E1CB004C5D02 /* BeaconManager.m */,
+			);
+			name = Beacon;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A175A6EC1AF6297B004C5D02 /* CoreLocationDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A175A7101AF6297C004C5D02 /* Build configuration list for PBXNativeTarget "CoreLocationDemo" */;
+			buildPhases = (
+				A175A6E91AF6297B004C5D02 /* Sources */,
+				A175A6EA1AF6297B004C5D02 /* Frameworks */,
+				A175A6EB1AF6297B004C5D02 /* Resources */,
+				A175A7411AF629AF004C5D02 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A175A7391AF629AF004C5D02 /* PBXTargetDependency */,
+			);
+			name = CoreLocationDemo;
+			productName = CoreLocationDemo;
+			productReference = A175A6ED1AF6297B004C5D02 /* CoreLocationDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A175A7051AF6297C004C5D02 /* CoreLocationDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A175A7131AF6297C004C5D02 /* Build configuration list for PBXNativeTarget "CoreLocationDemoTests" */;
+			buildPhases = (
+				A175A7021AF6297C004C5D02 /* Sources */,
+				A175A7031AF6297C004C5D02 /* Frameworks */,
+				A175A7041AF6297C004C5D02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A175A7081AF6297C004C5D02 /* PBXTargetDependency */,
+			);
+			name = CoreLocationDemoTests;
+			productName = CoreLocationDemoTests;
+			productReference = A175A7061AF6297C004C5D02 /* CoreLocationDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A175A7191AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A175A73E1AF629AF004C5D02 /* Build configuration list for PBXNativeTarget "CoreLocationDemo WatchKit Extension" */;
+			buildPhases = (
+				A175A7161AF629AF004C5D02 /* Sources */,
+				A175A7171AF629AF004C5D02 /* Frameworks */,
+				A175A7181AF629AF004C5D02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A175A72F1AF629AF004C5D02 /* PBXTargetDependency */,
+			);
+			name = "CoreLocationDemo WatchKit Extension";
+			productName = "CoreLocationDemo WatchKit Extension";
+			productReference = A175A71A1AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A175A72B1AF629AF004C5D02 /* CoreLocationDemo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A175A73B1AF629AF004C5D02 /* Build configuration list for PBXNativeTarget "CoreLocationDemo WatchKit App" */;
+			buildPhases = (
+				A175A72A1AF629AF004C5D02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreLocationDemo WatchKit App";
+			productName = "CoreLocationDemo WatchKit App";
+			productReference = A175A72C1AF629AF004C5D02 /* CoreLocationDemo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A175A6E51AF6297B004C5D02 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = BLStream;
+				TargetAttributes = {
+					A175A6EC1AF6297B004C5D02 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = XTRY58ZV6V;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A175A7051AF6297C004C5D02 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = A175A6EC1AF6297B004C5D02;
+					};
+					A175A7191AF629AF004C5D02 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = XTRY58ZV6V;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A175A72B1AF629AF004C5D02 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = XTRY58ZV6V;
+					};
+				};
+			};
+			buildConfigurationList = A175A6E81AF6297B004C5D02 /* Build configuration list for PBXProject "CoreLocationDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A175A6E41AF6297B004C5D02;
+			productRefGroup = A175A6EE1AF6297B004C5D02 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A175A6EC1AF6297B004C5D02 /* CoreLocationDemo */,
+				A175A7051AF6297C004C5D02 /* CoreLocationDemoTests */,
+				A175A7191AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension */,
+				A175A72B1AF629AF004C5D02 /* CoreLocationDemo WatchKit App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A175A6EB1AF6297B004C5D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A175A6FC1AF6297B004C5D02 /* Main.storyboard in Resources */,
+				A175A7011AF6297C004C5D02 /* LaunchScreen.xib in Resources */,
+				A175A6FE1AF6297C004C5D02 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A175A7041AF6297C004C5D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A175A7181AF629AF004C5D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A175A7291AF629AF004C5D02 /* Images.xcassets in Resources */,
+				A175A72D1AF629AF004C5D02 /* CoreLocationDemo WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A175A72A1AF629AF004C5D02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A175A7351AF629AF004C5D02 /* Interface.storyboard in Resources */,
+				A175A7371AF629AF004C5D02 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A175A6E91AF6297B004C5D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A175A74D1AF62EEC004C5D02 /* NotificationHelper.m in Sources */,
+				A175A7571AF63222004C5D02 /* SignificantLocationManager.m in Sources */,
+				A175A6F91AF6297B004C5D02 /* ViewController.m in Sources */,
+				A175A76F1AF7E1CB004C5D02 /* BeaconManager.m in Sources */,
+				A175A7601AF63C32004C5D02 /* ContinuousLocationManager.m in Sources */,
+				A175A75B1AF638B5004C5D02 /* VisitMonitoringManager.m in Sources */,
+				A175A6F61AF6297B004C5D02 /* AppDelegate.m in Sources */,
+				A175A7691AF7DC4C004C5D02 /* RegionLocationManager.m in Sources */,
+				A175A7661AF657DB004C5D02 /* AbstractLocationManager.m in Sources */,
+				A175A76C1AF7DDF6004C5D02 /* BeaconLocationManager.m in Sources */,
+				A175A6F31AF6297B004C5D02 /* main.m in Sources */,
+				A175A7501AF63074004C5D02 /* Location.m in Sources */,
+				A175A7451AF62BC2004C5D02 /* StorageManager.m in Sources */,
+				A175A7631AF645D4004C5D02 /* GeocoderManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A175A7021AF6297C004C5D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A175A70D1AF6297C004C5D02 /* CoreLocationDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A175A7161AF629AF004C5D02 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A175A7791AF95D2C004C5D02 /* TableController.m in Sources */,
+				A175A7241AF629AF004C5D02 /* NotificationController.m in Sources */,
+				A175A77C1AF95ECA004C5D02 /* RowController.m in Sources */,
+				A175A7511AF63074004C5D02 /* Location.m in Sources */,
+				A175A7211AF629AF004C5D02 /* InterfaceController.m in Sources */,
+				A175A7271AF629AF004C5D02 /* GlanceController.m in Sources */,
+				A175A7461AF62BC2004C5D02 /* StorageManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A175A7081AF6297C004C5D02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A175A6EC1AF6297B004C5D02 /* CoreLocationDemo */;
+			targetProxy = A175A7071AF6297C004C5D02 /* PBXContainerItemProxy */;
+		};
+		A175A72F1AF629AF004C5D02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A175A72B1AF629AF004C5D02 /* CoreLocationDemo WatchKit App */;
+			targetProxy = A175A72E1AF629AF004C5D02 /* PBXContainerItemProxy */;
+		};
+		A175A7391AF629AF004C5D02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A175A7191AF629AF004C5D02 /* CoreLocationDemo WatchKit Extension */;
+			targetProxy = A175A7381AF629AF004C5D02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A175A6FA1AF6297B004C5D02 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A175A6FB1AF6297B004C5D02 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A175A6FF1AF6297C004C5D02 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A175A7001AF6297C004C5D02 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A175A7331AF629AF004C5D02 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A175A7341AF629AF004C5D02 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A175A70E1AF6297C004C5D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A175A70F1AF6297C004C5D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A175A7111AF6297C004C5D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoreLocationDemo/CoreLocationDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CoreLocationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A175A7121AF6297C004C5D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CoreLocationDemo/CoreLocationDemo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CoreLocationDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		A175A7141AF6297C004C5D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoreLocationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreLocationDemo.app/CoreLocationDemo";
+			};
+			name = Debug;
+		};
+		A175A7151AF6297C004C5D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CoreLocationDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreLocationDemo.app/CoreLocationDemo";
+			};
+			name = Release;
+		};
+		A175A73C1AF629AF004C5D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = CoreLocationDemo_WatchKit_Extension;
+				INFOPLIST_FILE = "CoreLocationDemo WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A175A73D1AF629AF004C5D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = CoreLocationDemo_WatchKit_Extension;
+				INFOPLIST_FILE = "CoreLocationDemo WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A175A73F1AF629AF004C5D02 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CoreLocationDemo WatchKit Extension/CoreLocationDemo WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CoreLocationDemo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A175A7401AF629AF004C5D02 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "CoreLocationDemo WatchKit Extension/CoreLocationDemo WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CoreLocationDemo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A175A6E81AF6297B004C5D02 /* Build configuration list for PBXProject "CoreLocationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A175A70E1AF6297C004C5D02 /* Debug */,
+				A175A70F1AF6297C004C5D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A175A7101AF6297C004C5D02 /* Build configuration list for PBXNativeTarget "CoreLocationDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A175A7111AF6297C004C5D02 /* Debug */,
+				A175A7121AF6297C004C5D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A175A7131AF6297C004C5D02 /* Build configuration list for PBXNativeTarget "CoreLocationDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A175A7141AF6297C004C5D02 /* Debug */,
+				A175A7151AF6297C004C5D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A175A73B1AF629AF004C5D02 /* Build configuration list for PBXNativeTarget "CoreLocationDemo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A175A73C1AF629AF004C5D02 /* Debug */,
+				A175A73D1AF629AF004C5D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A175A73E1AF629AF004C5D02 /* Build configuration list for PBXNativeTarget "CoreLocationDemo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A175A73F1AF629AF004C5D02 /* Debug */,
+				A175A7401AF629AF004C5D02 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A175A6E51AF6297B004C5D02 /* Project object */;
+}
