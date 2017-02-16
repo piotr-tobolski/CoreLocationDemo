@@ -18,6 +18,7 @@
     if (self = [super init]) {
         _locationManager = [[CLLocationManager alloc] init];
         _locationManager.delegate = self;
+        _locationManager.allowsBackgroundLocationUpdates = YES;
         NSLog(@"Created instance of class: %@, _locationManager.location: %@", NSStringFromClass([self class]), _locationManager.location);
     }
     return self;
